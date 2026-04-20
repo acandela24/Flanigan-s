@@ -180,7 +180,7 @@ export default function ChatPage() {
       height: '100dvh',
       display: 'flex',
       flexDirection: 'column',
-      background: '#F0F4F0',
+      background: '#1B5E20',
       fontFamily: 'var(--font-body)',
     }}>
       {/* Header */}
