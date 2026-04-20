@@ -6,11 +6,21 @@ function BotAvatar() {
   return (
     <div style={{
       width: 36, height: 36, borderRadius: '50%',
-      background: 'linear-gradient(135deg, #2E7D32, #43A047)',
+      background: 'white',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
-      fontSize: 18, flexShrink: 0, boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
+      flexShrink: 0, boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
+      overflow: 'hidden', padding: 3,
     }}>
-      🐟
+      <img
+        src="/flanigans-logo.png"
+        alt="Flanigan's"
+        style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+        onError={e => {
+          e.target.style.display = 'none';
+          e.target.parentElement.style.background = 'linear-gradient(135deg, #2E7D32, #43A047)';
+          e.target.parentElement.innerHTML = '<span style="color:white;font-family:Luckiest Guy,cursive;font-size:15px;font-weight:400">F</span>';
+        }}
+      />
     </div>
   );
 }
@@ -92,7 +102,7 @@ export default function ChatPage() {
         setMessages([{
           id: 1,
           role: 'assistant',
-          content: "Hey there, welcome to Flanigan's! 🐟 How can I help ya today?",
+          content: "Hey there, welcome to Flanigan's! How can I help ya today?",
           time: formatTime(new Date()),
         }]);
       });
@@ -196,25 +206,24 @@ export default function ChatPage() {
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
             <div style={{
-              width: 52, height: 52, borderRadius: '50%',
-              background: 'rgba(255,255,255,0.15)',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              fontSize: 26, border: '2px solid rgba(255,255,255,0.3)',
+              background: 'white',
+              borderRadius: 10,
+              padding: '5px 12px',
+              boxShadow: '0 2px 10px rgba(0,0,0,0.2)',
+              display: 'flex', alignItems: 'center',
             }}>
-              🐟
+              <img
+                src="/flanigans-logo.png"
+                alt="Flanigan's"
+                style={{ height: 46, display: 'block', objectFit: 'contain' }}
+                onError={e => {
+                  e.target.style.display = 'none';
+                  e.target.parentElement.innerHTML = '<span style="font-family:Luckiest Guy,cursive;font-size:26px;color:#2E7D32;letter-spacing:1px">FLANIGAN\'S</span>';
+                }}
+              />
             </div>
-            <div>
-              <div style={{
-                fontFamily: 'var(--font-brand)',
-                fontSize: 28, color: 'white',
-                letterSpacing: '0.5px',
-                textShadow: '0 2px 4px rgba(0,0,0,0.2)',
-              }}>
-                Flanigan's
-              </div>
-              <div style={{ fontSize: 11.5, color: 'rgba(255,255,255,0.85)', letterSpacing: '1px', textTransform: 'uppercase' }}>
-                Seafood Bar &amp; Grill · Since 1959
-              </div>
+            <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.8)', letterSpacing: '1px', textTransform: 'uppercase', lineHeight: 1.6 }}>
+              Seafood Bar &amp; Grill<br />Since 1959
             </div>
           </div>
 

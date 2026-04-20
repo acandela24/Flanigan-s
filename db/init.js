@@ -84,7 +84,7 @@ function initDB() {
     ['phone', 'Check flanigans.net for your nearest location phone number'],
     ['hours', 'Open daily — hours vary by location. Visit flanigans.net for details.'],
     ['website', 'https://www.flanigans.net'],
-    ['bot_greeting', "Hey there, welcome to Flanigan's! 🐟 South Florida's favorite neighborhood hangout since 1959. Whether you're craving wings, a burger, or just wanna know what's good — I'm here to help! What can I do for ya?"],
+    ['bot_greeting', "Hey there, welcome to Flanigan's! South Florida's favorite neighborhood hangout since 1959. Whether you're craving wings, a burger, or just wanna know what's good — I'm here to help! What can I do for ya?"],
     ['bot_personality', "Friendly and laid-back, like a warm South Florida bartender who's worked at Flanigan's for years. Casual, enthusiastic about the food, and proud of the big portions and great value. Occasionally use 'ya' instead of 'you'. Reference South Florida culture, the beach, and local pride when it fits naturally. Always make guests feel like family."],
     ['custom_instructions', ''],
   ];

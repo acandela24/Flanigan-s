@@ -645,12 +645,24 @@ function LoginPage({ onLogin }) {
       }}>
         <div style={{ textAlign: 'center', marginBottom: 32 }}>
           <div style={{
-            width: 72, height: 72, borderRadius: '50%',
-            background: 'linear-gradient(135deg, #1B5E20, #43A047)',
+            width: 88, height: 88, borderRadius: 14,
+            background: 'white',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: 36, margin: '0 auto 16px',
-            boxShadow: '0 4px 16px rgba(46,125,50,0.4)',
-          }}>🐟</div>
+            margin: '0 auto 16px',
+            boxShadow: '0 4px 16px rgba(46,125,50,0.25)',
+            padding: 8, overflow: 'hidden',
+          }}>
+            <img
+              src="/flanigans-logo.png"
+              alt="Flanigan's"
+              style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+              onError={e => {
+                e.target.style.display = 'none';
+                e.target.parentElement.style.background = 'linear-gradient(135deg,#1B5E20,#43A047)';
+                e.target.parentElement.innerHTML = '<span style="font-family:Luckiest Guy,cursive;font-size:22px;color:white">F</span>';
+              }}
+            />
+          </div>
           <div style={{ fontFamily: 'var(--font-brand)', fontSize: 32, color: 'var(--green-dark)', lineHeight: 1 }}>Flanigan's</div>
           <div style={{ fontSize: 13, color: 'var(--gray-medium)', marginTop: 4, letterSpacing: '1px', textTransform: 'uppercase' }}>Admin Dashboard</div>
         </div>
@@ -752,7 +764,7 @@ function Dashboard({ token, username, onLogout }) {
           height: 60,
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <span style={{ fontSize: 22 }}>🐟</span>
+            <img src="/flanigans-logo.png" alt="Flanigan's" style={{ height: 28, objectFit: 'contain' }} onError={e => { e.target.style.display='none'; }} />
             <div>
               <span style={{ fontFamily: 'var(--font-brand)', fontSize: 20, color: 'white' }}>Flanigan's</span>
               <span style={{ fontSize: 12, color: 'rgba(255,255,255,0.7)', marginLeft: 8 }}>Admin</span>
@@ -785,7 +797,7 @@ function Dashboard({ token, username, onLogout }) {
                   onMouseOver={e => e.target.style.background = 'var(--green-pale)'}
                   onMouseOut={e => e.target.style.background = 'white'}
                 >
-                  🐟 View Chat →
+                  View Chat →
                 </a>
                 <button onClick={() => { setShowChangePw(true); setMenuOpen(false); }}
                   style={{ display: 'block', width: '100%', padding: '11px 16px', color: 'var(--dark)', background: 'none', border: 'none', textAlign: 'left', fontSize: 13, cursor: 'pointer', borderBottom: '1px solid var(--gray-light)', fontFamily: 'var(--font-body)' }}
