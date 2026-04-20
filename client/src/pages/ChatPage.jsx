@@ -205,23 +205,20 @@ export default function ChatPage() {
           padding: '14px 0',
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-            <div style={{
-              background: 'white',
-              borderRadius: 10,
-              padding: '5px 12px',
-              boxShadow: '0 2px 10px rgba(0,0,0,0.2)',
-              display: 'flex', alignItems: 'center',
-            }}>
-              <img
-                src="/flanigans-logo.png"
-                alt="Flanigan's"
-                style={{ height: 46, display: 'block', objectFit: 'contain' }}
-                onError={e => {
-                  e.target.style.display = 'none';
-                  e.target.parentElement.innerHTML = '<span style="font-family:Luckiest Guy,cursive;font-size:26px;color:#2E7D32;letter-spacing:1px">FLANIGAN\'S</span>';
-                }}
-              />
-            </div>
+            <img
+              src="/flanigans-logo.png"
+              alt="Flanigan's"
+              style={{
+                height: 72,
+                display: 'block',
+                objectFit: 'contain',
+                filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.4)) brightness(1.08) contrast(1.1)',
+              }}
+              onError={e => {
+                e.target.style.display = 'none';
+                e.target.insertAdjacentHTML('afterend', '<span style="font-family:Luckiest Guy,cursive;font-size:30px;color:white;letter-spacing:1px;text-shadow:0 2px 6px rgba(0,0,0,0.4)">FLANIGAN\'S</span>');
+              }}
+            />
             <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.8)', letterSpacing: '1px', textTransform: 'uppercase', lineHeight: 1.6 }}>
               Seafood Bar &amp; Grill<br />Since 1959
             </div>
