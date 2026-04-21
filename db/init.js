@@ -142,6 +142,14 @@ function initDB() {
         'Season chicken with salt, pepper, and garlic powder. Grill or pan-cook ~5–6 minutes per side until fully cooked. Toast buns lightly. Assemble with toppings and sauce.',
         '',
       ],
+      [
+        'Entrees',
+        'BBQ Baby Back Ribs (Sports Grill Style)',
+        'A full rack of tender baby back pork ribs coated in a smoky dry rub, slow-cooked to fall-off-the-bone perfection, and finished with a honey-butter BBQ glaze. No sesame.',
+        'Ribs: 1 rack baby back pork ribs. Dry Rub: 2 tbsp brown sugar, 1 tbsp paprika, 1 tsp salt, 1 tsp black pepper, 1 tsp garlic powder, 1 tsp onion powder, 1/2 tsp chili powder. BBQ Sauce: 1 cup BBQ sauce, 1 tbsp honey, 1 tbsp butter. Contains no sesame.',
+        'Mix dry rub ingredients and coat ribs thoroughly. Wrap in foil and bake at 275°F for 2.5–3 hours until tender. Melt butter with honey and stir into BBQ sauce. Unwrap ribs, brush with sauce, and broil or grill 3–5 minutes to caramelize. Serve with extra sauce on the side.',
+        '',
+      ],
     ];
 
     for (const item of items) {
