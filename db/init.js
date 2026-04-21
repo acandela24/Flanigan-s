@@ -230,6 +230,7 @@ function initDB() {
         "Does Flanigan's have a loyalty app or punch card?",
         "Yes! Download the Flanigan's Lunch Club app and earn a punch for every lunch visit. After 10 lunches, your 11th lunch is free. It's a great deal if you're a regular lunch customer.",
       ],
+    ];
 
     for (const [q, a] of faqs) {
       insertFAQ.run(q, a);
