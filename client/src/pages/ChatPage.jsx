@@ -169,10 +169,9 @@ export default function ChatPage() {
   }
 
   const suggestions = [
-    "What's on the menu?",
-    "Tell me about your wings 🍗",
-    "What makes Flanigan's special?",
-    "Where are you located?",
+    "Do the ribs contain sesame?",
+    "What are the discounts for today?",
+    "Are the fries cooked in seed oils?",
   ];
 
   return (
