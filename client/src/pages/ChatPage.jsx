@@ -170,6 +170,7 @@ export default function ChatPage() {
 
   const suggestions = [
     "Do the ribs contain sesame?",
+    "What are the deals?",
     "Are the fries cooked in seed oils?",
   ];
 
