@@ -194,7 +194,42 @@ function initDB() {
         "Do you have vegetarian or dietary options?",
         "We have options that can work for various dietary needs! Our menu has salads, sides, and we're happy to accommodate when possible. Ask your server for the best options for you.",
       ],
-    ];
+      [
+        "What deals or specials does Flanigan's have?",
+        "Flanigan's has tons of great deals! Here's a full rundown:\n\n🍔 $6.99 Lunch Specials — Mon–Fri, 11AM–4PM. Includes a beverage. Choose from a 10oz burger, wings, soup & salad, or chicken sandwich.\n\n🍺 Free Appetizer with Pitcher — Every night 10PM–12AM. Get free curly fries, tumbleweed onions, or chicken wings with any pitcher purchase (beer, iced tea, lemonade, or soda).\n\n🍖 Joe's Meal Deals — Sun–Thu, open to close. Includes your meal + Caesar salad + garlic rolls + free drink. Prices range from $17.99–$26.99 (wings, ribs, or steak).\n\n🍻 Happy Hour — Daily 9PM to close AND Mon–Fri 4PM–7PM. 50% off all beer, wine, and liquor.\n\n🧀 Monday Pitcher Special — Free loaded nachos with any pitcher purchase.\n\n🍗 Wing It Wednesday — Free wings with any pitcher purchase.\n\n♻️ Return Your Cup — Bring back your Flanigan's green cup for $1 off your drink.\n\n📱 Lunch Club App — Download the app and earn a free 11th lunch after 10 punches.\n\nAsk me about any of these for more details!",
+      ],
+      [
+        "What is Happy Hour at Flanigan's?",
+        "Happy Hour at Flanigan's runs twice daily: Mon–Fri from 4PM–7PM, and every night from 9PM to close. During Happy Hour you get 50% off all beer, wine, and liquor. It's one of the best deals in South Florida!",
+      ],
+      [
+        "Does Flanigan's have lunch specials?",
+        "Yes! Flanigan's $6.99 Lunch Specials run Monday through Friday from 11AM–4PM and include a beverage. You can choose from a 10oz burger, wings, soup & salad, or a chicken sandwich. Great value for a full meal!",
+      ],
+      [
+        "What is Joe's Meal Deal?",
+        "Joe's Meal Deal is available Sunday through Thursday, open to close. Each deal includes your entrée, a Caesar salad, garlic rolls, and a free drink. Options and prices: Wings ($17.99), Ribs ($24.99), and Steak ($26.99). It's one of the best value dinners on the menu!",
+      ],
+      [
+        "Does Flanigan's have free appetizers or free wings?",
+        "Yes! Two ways to score free food:\n\n• Every night from 10PM–12AM, get a free appetizer (curly fries, tumbleweed onions, or chicken wings) with any pitcher purchase of beer, iced tea, lemonade, or soda.\n• Every Wednesday (Wing It Wednesday), get free wings with any pitcher purchase.",
+      ],
+      [
+        "What is Wing It Wednesday at Flanigan's?",
+        "Every Wednesday at Flanigan's is Wing It Wednesday — buy any pitcher and get free wings on us! It's a great mid-week excuse to come hang out.",
+      ],
+      [
+        "What is the Monday Pitcher Special?",
+        "Every Monday, buy any pitcher and get free loaded nachos on the house. It's the perfect way to start the week at Flanigan's!",
+      ],
+      [
+        "Can I get a discount for bringing back my Flanigan's cup?",
+        "Absolutely! If you bring back your Flanigan's green cup, you get $1 off your drink. Every time. It's our way of saying thanks for being a regular!",
+      ],
+      [
+        "Does Flanigan's have a loyalty app or punch card?",
+        "Yes! Download the Flanigan's Lunch Club app and earn a punch for every lunch visit. After 10 lunches, your 11th lunch is free. It's a great deal if you're a regular lunch customer.",
+      ],
 
     for (const [q, a] of faqs) {
       insertFAQ.run(q, a);
